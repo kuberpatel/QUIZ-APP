@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="start-rules">
+            <h2>Welcome to Ninja's Quiz.</h2>
+            <h3>Rules:</h3>
+            <ul>
+                <li>Click "Start Quiz" to begin.</li>
+                <li>Answer as many questions as you can in 60 seconds.</li>
+                <li>Each correct answer gives you 10 points.</li>
+                <li>Try to get the highest score!</li>
+            </ul>
+        </div>
+        <div id="startScreen">
+            <button id="startQuiz">Start Quiz</button>
+        </div>
+        <div id="quizScreen" class="hidden">
+            <div id="question"></div>
+            <div class="answer-container">
+                <button class="answer">
+                    <span class="answer-icon"></span> Answer 1
+                </button>
+                <button class="answer">
+                    <span class="answer-icon"></span> Answer 2
+                </button>
+                <button class="answer">
+                    <span class="answer-icon"></span> Answer 3
+                </button>
+                <button class="answer">
+                    <span class="answer-icon"></span> Answer 4
+                </button>
+            </div>
+            <div id="timer">Time left: 60 seconds</div>
+            <div id="scoreDisplay">Score: <span id="score">0</span></div>
+        </div>
+        <div id="endScreen" class="hidden">
+            <div>
+                <h2 id="game-over">Game Over!</h2>
+                <p>Improve your knowledge by playing again and again.</p>
+                <h3><p id="endMessage"></p></h3>
+                <h3>Your score: <span id="finalScore"></span></h3>
+            </div>
+            <button id="playAgain">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
